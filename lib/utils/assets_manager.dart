@@ -1,8 +1,8 @@
 class ImageManager {
-  static const String basePath = "assets/icons";
+  static const String basePath = "assets/images";
   // Welcome Screen
   static const String couplePic = 'assets/images/couplePic.png';
-  static const String welcomePage = 'assets/images/Group.png';
+  static const String welcomePage = 'assets/images/group_png.png';
   // define more images if need (only the images)
 }
 
@@ -22,6 +22,7 @@ class SvgManager {
   static const String logo1 = '$basePath/heartWhite.svg';
   static const String hearTalk2 = '$basePath/HeartTalkWhite.svg';
   static const String apple = '$basePath/apple.svg';
+  static const String gmail = '$basePath/Gmail.svg';
 
 // define more svg if need (only the svg)
 }
