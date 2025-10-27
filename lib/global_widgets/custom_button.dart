@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../utils/colors.dart';
+import 'custom_text.dart';
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({
+    super.key,
+    this.height = 50,
+    this.width = double.maxFinite,
+    required this.onTap,
+    this.title = '',
+    this.marginVertical = 0,
+    this.marginHorizontal = 0,
+    this.fillColor = AppColors.primary,
+    this.textColor = AppColors.white,
+    this.isBorder = false,
+    this.fontSize,
+    this.borderWidth,
+    this.borderRadius,
+    this.gradient =AppColors.btnColor,
+  });
+
+  final double height;
+  final double? width;
+  final Color? fillColor;
+  final Color textColor;
+  final VoidCallback onTap;
+  final String title;
+  final double marginVertical;
+  final double marginHorizontal;
+  final bool isBorder;
+  final double? fontSize;
+  final double? borderWidth;
+  final double? borderRadius;
+  final Gradient? gradient;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 0.h),
+        margin: EdgeInsets.symmetric(
+            vertical: marginVertical, horizontal: marginHorizontal),
+        alignment: Alignment.center,
+        height: height,
+        width: width,
+        decoration: BoxDecoration(
+          border: isBorder
+              ? Border.all(color: textColor, width: borderWidth ?? .5)
+              : null,
+          borderRadius: BorderRadius.circular(borderRadius ?? 4),
+          color: gradient == null ? fillColor : null,
+          gradient: gradient,
+        ),
+
+        child: CustomText(
+          fontSize: fontSize ?? 16.sp,
+          fontWeight: FontWeight.bold,
+          color: textColor,
+          textAlign: TextAlign.center,
+          text: title,
+
+        ),
+      ),
+    );
+  }
+}
