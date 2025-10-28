@@ -1,5 +1,6 @@
-import 'package:dating_apps/views/home_screen/home_screen.dart';
+import 'package:dating_apps/views/home_screen/home_screen.dart' hide HomeScreen;
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import '../../views/auth/login_screen.dart';
 import '../../views/onbording_screen/onboarding2.dart';
 import '../../views/onbording_screen/onbording.dart';
 import '../../views/welcome_screen/welcome_page.dart';
@@ -10,6 +11,7 @@ import '../dependency_injection/dependency_injection.dart';
 class AppRoutes {
   ///=========================== onboarding Part 1======================//
   static const String onboarding1 = "/Onboarding";
+  static const String login = "/LoginScreen";
   static const String onboarding2 = "/Onboarding2";
 
   // ================== welcome screen =====================//
@@ -35,11 +37,14 @@ class AppRoutes {
    GetPage(name:welcomeScreen2, page:() => WelcomeScreen2(),),
    GetPage(name:welcome, page:() => WelcomePage(),),
 
+    //=========================== Login ==============================
+    GetPage(name: login, page: () => LoginScreen()),
+
 
 // ============================== Home Screen ================================
-  GetPage(name: homeScreen, page:() => HomeScreen(),
-    binding: HomeBinding(),
-  ),
+//   GetPage(name: homeScreen, page:() => HomeScreen(),
+//     binding: HomeBinding(),
+//   ),
 
 
   ];

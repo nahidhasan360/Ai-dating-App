@@ -21,10 +21,16 @@ class SvgManager {
   // svg for onboarding two
   static const String logo1 = '$basePath/heartWhite.svg';
   static const String hearTalk2 = '$basePath/HeartTalkWhite.svg';
+  // welcome page icon svg
   static const String apple = '$basePath/apple.svg';
   static const String gmail = '$basePath/Gmail.svg';
 
-// define more svg if need (only the svg)
+
+  // login icon collection
+
+  static const String back = '$basePath/Back.svg';
+
+
 }
 //==============================================================================================//
 
