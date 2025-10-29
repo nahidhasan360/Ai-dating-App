@@ -10,7 +10,7 @@ class AppColors {
       Color(0xFF140c0e),
       Color(0xFF3e223c),
     ],
-    stops: [0.1, 0.5, 1.0],
+    stops: [0.1, 0.3, 1.0],
   );
   // ==================== Gradient Color is end =====================//
 
@@ -35,7 +35,20 @@ class AppColors {
   static const Color white = Colors.white;
   static const Color boxColor = Color(0xff4a3548);
   static const Color systemStatus =  Color(0xFF5C2552);
+  static const Color borderSide = Color(0xFFFF3578);
 
+
+
+  static const Color primary1 = Color(0xFFDD88CF);
+  static const Color secondary = Color(0xFF8C4EFF);
+  static const Color background = Color(0xFF1C0028);
+
+
+  // span text color
+  static const Color spanTextColor = Color(0xFF9249AD);
+
+  // subtitle color
+  static const Color subtitleColor = Color(0xFF979797);
 
 
 

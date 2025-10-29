@@ -27,9 +27,8 @@ class SvgManager {
 
 
   // login icon collection
-
   static const String back = '$basePath/Back.svg';
-
+  static const String success = '$basePath/success.svg';
 
 }
 //==============================================================================================//

@@ -38,6 +38,9 @@ dependencies:
   #google fonts
   google_fonts: ^6.3.2
 
+  pin_code_text_field: ^1.8.0
+  pin_code_fields: ^8.0.1
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8

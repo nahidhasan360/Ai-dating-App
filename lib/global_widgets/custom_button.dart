@@ -18,7 +18,7 @@ class CustomButton extends StatelessWidget {
     this.fontSize,
     this.borderWidth,
     this.borderRadius,
-    this.gradient =AppColors.btnColor,
+    this.gradient =AppColors.btnColor, this.fontWeight,
   });
 
   final double height;
@@ -34,6 +34,7 @@ class CustomButton extends StatelessWidget {
   final double? borderWidth;
   final double? borderRadius;
   final Gradient? gradient;
+  final FontWeight? fontWeight;
 
   @override
   Widget build(BuildContext context) {
@@ -57,10 +58,11 @@ class CustomButton extends StatelessWidget {
 
         child: CustomText(
           fontSize: fontSize ?? 16.sp,
-          fontWeight: FontWeight.bold,
+          fontWeight: fontWeight ?? FontWeight.bold,
           color: textColor,
           textAlign: TextAlign.center,
           text: title,
+
 
         ),
       ),

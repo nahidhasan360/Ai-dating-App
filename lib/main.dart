@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         // defaultTransition: Transition.fade,
         // transitionDuration: const Duration(milliseconds: 200),
-        initialRoute: AppRoutes.login,
+        initialRoute: AppRoutes.forgetPasswordScreen,
         navigatorKey: Get.key,
         getPages: AppRoutes.routes,
       ),
