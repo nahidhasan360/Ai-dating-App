@@ -7,6 +7,8 @@ import '../../views/auth/Forget_Password/success_screen/success_screen.dart';
 import '../../views/auth/login-screen/confirm_screen/confirm_screen.dart';
 import '../../views/auth/login-screen/login_screen.dart';
 import '../../views/auth/login-screen/otp_screen/otp_screen.dart';
+import '../../views/create_account/create_account.dart';
+import '../../views/create_account/select_gender/select_gender.dart';
 import '../../views/onbording_screen/onboarding2.dart';
 import '../../views/onbording_screen/onbording.dart';
 import '../../views/welcome_screen/welcome_page.dart';
@@ -40,6 +42,12 @@ class AppRoutes {
   // ================ set new password ======================
   static const String setNewPassword = "/SetNewPassword";
   static const String successScreen = "/SuccessScreen";
+
+  // ================ CreateAccount ========================
+  static const String createAccount = "/CreateAccount";
+
+  // ================ select gender ========================
+  static const String  selectGender  = "/SelectGender";
 
 
 
@@ -76,6 +84,13 @@ class AppRoutes {
     GetPage(name: continueScreen, page: () => ContinueScreen()),
     GetPage(name: setNewPassword, page: () => SetNewPassword()),
     GetPage(name: successScreen, page: () => SuccessScreen()),
+
+
+    //===========  select gender ==================
+
+    GetPage(name: selectGender, page: () => SelectGender(),),
+    //===========  CreateAccount ==================
+    GetPage(name: createAccount, page: () => CreateAccount(),)
 
 
 

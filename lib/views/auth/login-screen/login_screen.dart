@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import '../../../controllers/auth_controller/login_controller.dart';
 
 class LoginScreen extends StatelessWidget {
+  LoginScreen({super.key});
   final controller = Get.put(LoginController());
   final _formKey = GlobalKey<FormState>();
 

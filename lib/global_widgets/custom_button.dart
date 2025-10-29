@@ -18,7 +18,7 @@ class CustomButton extends StatelessWidget {
     this.fontSize,
     this.borderWidth,
     this.borderRadius,
-    this.gradient =AppColors.btnColor, this.fontWeight,
+    this.gradient =AppColors.btnColor, this.fontWeight, this.padding,
   });
 
   final double height;
@@ -35,6 +35,7 @@ class CustomButton extends StatelessWidget {
   final double? borderRadius;
   final Gradient? gradient;
   final FontWeight? fontWeight;
+  final Padding? padding;
 
   @override
   Widget build(BuildContext context) {

@@ -29,6 +29,14 @@ class SvgManager {
   // login icon collection
   static const String back = '$basePath/Back.svg';
   static const String success = '$basePath/success.svg';
+  static const String camera = '$basePath/camera.svg';
+
+
+  // gender selection icon
+
+static const String male = '$basePath/male.svg';
+static const String female = '$basePath/female.svg';
+static const String trans = '$basePath/trans.svg';
 
 }
 //==============================================================================================//
