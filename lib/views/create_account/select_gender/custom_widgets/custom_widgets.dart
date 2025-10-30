@@ -36,7 +36,7 @@ class GenderSelection extends StatelessWidget {
           const SizedBox(height: 20),
           _buildGenderCard(
             icon: Icons.transgender,
-            label: "I prefer not to say",
+            label: "I prefer not to\nsay",
             isSelected: controller.selectedGender.value == "None",
             onTap: () => controller.selectGender("None"),
           ),
@@ -63,8 +63,8 @@ class GenderSelection extends StatelessWidget {
               : Border.all(color: Colors.white24, width: 1.2),
         ),
         child: Container(
-          width: 125,
-          height: 125,
+          width: 119,
+          height: 105,
           decoration: BoxDecoration(
             color: const Color(0xFF1E1124),
             borderRadius: BorderRadius.circular(14),
@@ -75,9 +75,9 @@ class GenderSelection extends StatelessWidget {
               Icon(
                 icon,
                 color: isSelected ? const Color(0xFFFF5C8D) : Colors.white,
-                size: 66,
+                size: 52,
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 4),
               Text(
                 label,
                 textAlign: TextAlign.center,

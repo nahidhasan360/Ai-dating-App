@@ -1,6 +1,7 @@
 import 'package:dating_apps/core/routes/all_routes.dart';
 import 'package:dating_apps/global_widgets/custom_appbar.dart';
 import 'package:dating_apps/global_widgets/custom_button.dart';
+import 'package:dating_apps/utils/assets_manager.dart';
 import 'package:dating_apps/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +15,7 @@ class SelectGender extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: CustomAppBar(iconPath: 'assets/icons/Back.svg'),
+      appBar: CustomAppBar(iconPath:SvgManager.back,),
 
       body: Container(
         width: double.infinity,
@@ -33,7 +34,7 @@ class SelectGender extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Which gender are you interested in?',
+                    'Select Gender',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 28,
@@ -46,19 +47,23 @@ class SelectGender extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Please select AI character',
+                    'Please select your gender',
                     style: TextStyle(
                       color: AppColors.subtitleColor,
                       fontSize: 14,
                     ),
                   ),
                 ),
-                const SizedBox(height: 17),
+                const SizedBox(height: 10),
 
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [const SizedBox(height: 20), GenderSelection()],
+                  children: [
+                    const SizedBox(height: 20),
+
+                // ============== gender selection =====================
+                    GenderSelection()],
                 ),
                 const SizedBox(height: 40),
 
@@ -71,6 +76,7 @@ class SelectGender extends StatelessWidget {
                   fontSize: 16,
                   borderRadius: 10,
                 ),
+                const SizedBox(height: 20),
               ],
             ),
           ),

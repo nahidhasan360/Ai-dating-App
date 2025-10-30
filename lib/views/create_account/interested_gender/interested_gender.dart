@@ -3,7 +3,7 @@ import 'package:dating_apps/global_widgets/custom_button.dart';
 import 'package:dating_apps/utils/assets_manager.dart';
 import 'package:dating_apps/utils/colors.dart';
 import 'package:flutter/material.dart';
-import 'custom_widgets_intrst.dart';
+import 'custom_widgets_intrst/custom_widgets_intrst.dart';
 
 class InterestedGender extends StatelessWidget {
   const InterestedGender({super.key});

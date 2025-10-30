@@ -1,3 +1,4 @@
+import 'package:dating_apps/utils/assets_manager.dart';
 import 'package:dating_apps/views/create_account/interested_gender/interested_gender_controller/interested_gender_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,14 +21,14 @@ class InterestedGenderSelection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           _buildGenderCard(
-            imagePath: 'assets/images/female.png',
+            imagePath: ImageManager.genderFemale,
             label: "Female",
             isSelected: controller.selectedGender.value == "Female",
             onTap: () => controller.selectGender("Female"),
           ),
           const SizedBox(height: 20),
           _buildGenderCard(
-            imagePath: 'assets/images/male.png',
+            imagePath: ImageManager.genderFemale2,
             label: "Male",
             isSelected: controller.selectedGender.value == "Male",
             onTap: () => controller.selectGender("Male"),
@@ -66,19 +67,18 @@ class InterestedGenderSelection extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
-                // ✅ Gender image
                 Image.asset(
                   imagePath,
                   fit: BoxFit.cover,
                 ),
 
-                // ✅ Optional overlay (highlight when selected)
+
                 if (isSelected)
                   Container(
-                    color: Colors.black.withOpacity(0.25),
+                    color: Colors.black.withValues(alpha: 0.25),
                   ),
 
-                // ✅ Optional label overlay (you can remove if not needed)
+
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: Container(

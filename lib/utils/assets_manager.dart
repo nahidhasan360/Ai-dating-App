@@ -1,8 +1,12 @@
 class ImageManager {
-  static const String basePath = "assets/images";
+  static const String basePathImage = "assets/images";
   // Welcome Screen
   static const String couplePic = 'assets/images/couplePic.png';
   static const String welcomePage = 'assets/images/group_png.png';
+
+  static const String genderFemale = "$basePathImage/female.png";
+  static const String genderFemale2 = "$basePathImage/boyPic.png";
+
   // define more images if need (only the images)
 }
 

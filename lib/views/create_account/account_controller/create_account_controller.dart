@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
 class AccountController extends GetxController {
-  final formKey = GlobalKey<FormState>();
+  // final formKey = GlobalKey<FormState>();
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final dobController = TextEditingController();
@@ -56,26 +56,26 @@ class AccountController extends GetxController {
       "${picked.day.toString().padLeft(2, '0')}/${picked.month.toString().padLeft(2, '0')}/${picked.year}";
     }
   }
-
-  void submit() {
-    if (formKey.currentState?.validate() ?? false) {
-
-      Get.snackbar(
-        "Success",
-        "All fields are valid!",
-        snackPosition: SnackPosition.BOTTOM,
-        backgroundColor: Colors.green,
-        colorText: Colors.white,
-      );
-    } else {
-      Get.snackbar(
-        "Error",
-        "Please fill all fields correctly",
-        snackPosition: SnackPosition.BOTTOM,
-        backgroundColor: Colors.red,
-        colorText: Colors.white,
-      );
-    }
-  }
+  //
+  // void submit() {
+  //   if (formKey.currentState?.validate() ?? false) {
+  //
+  //     Get.snackbar(
+  //       "Success",
+  //       "All fields are valid!",
+  //       snackPosition: SnackPosition.BOTTOM,
+  //       backgroundColor: Colors.green,
+  //       colorText: Colors.white,
+  //     );
+  //   } else {
+  //     Get.snackbar(
+  //       "Error",
+  //       "Please fill all fields correctly",
+  //       snackPosition: SnackPosition.BOTTOM,
+  //       backgroundColor: Colors.red,
+  //       colorText: Colors.white,
+  //     );
+  //   }
+  // }
 
 }
