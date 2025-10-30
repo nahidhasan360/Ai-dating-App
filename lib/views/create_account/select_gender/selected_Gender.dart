@@ -1,7 +1,9 @@
+import 'package:dating_apps/core/routes/all_routes.dart';
 import 'package:dating_apps/global_widgets/custom_appbar.dart';
 import 'package:dating_apps/global_widgets/custom_button.dart';
 import 'package:dating_apps/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'custom_widgets/custom_widgets.dart';
 
@@ -26,12 +28,12 @@ class SelectGender extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: 140),
+                SizedBox(height: 136),
                 // Title
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Select Gender ',
+                    'Which gender are you interested in?',
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 28,
@@ -44,7 +46,7 @@ class SelectGender extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Please select your gender',
+                    'Please select AI character',
                     style: TextStyle(
                       color: AppColors.subtitleColor,
                       fontSize: 14,
@@ -62,7 +64,9 @@ class SelectGender extends StatelessWidget {
 
                 // use below custom button
                 CustomButton(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed(AppRoutes.setPassword);
+                  },
                   title: 'Continue',
                   fontSize: 16,
                   borderRadius: 10,

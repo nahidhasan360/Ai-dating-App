@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../global_widgets/custom_appbar.dart';
 import '../../global_widgets/profile_avator.dart';
-import 'account_controller/account_controller.dart';
+import 'account_controller/create_account_controller.dart';
 
 class CreateAccount extends StatelessWidget {
   final controller = Get.put(AccountController());

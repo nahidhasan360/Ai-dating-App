@@ -3,7 +3,7 @@ import 'package:dating_apps/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import '../views/create_account/account_controller/account_controller.dart';
+import '../views/create_account/account_controller/create_account_controller.dart';
 
 class ProfileAvatar extends StatelessWidget {
   final controller = Get.find<AccountController>();

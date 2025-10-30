@@ -1,6 +1,7 @@
-import 'package:dating_apps/views/create_account/select_gender/gender_controller/gender_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../gender_controller/selected_Gender.dart';
 
 class GenderSelection extends StatelessWidget {
   final controller = Get.put(GenderController());

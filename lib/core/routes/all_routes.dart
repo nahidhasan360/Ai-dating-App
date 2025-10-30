@@ -8,7 +8,9 @@ import '../../views/auth/login-screen/confirm_screen/confirm_screen.dart';
 import '../../views/auth/login-screen/login_screen.dart';
 import '../../views/auth/login-screen/otp_screen/otp_screen.dart';
 import '../../views/create_account/create_account.dart';
-import '../../views/create_account/select_gender/select_gender.dart';
+import '../../views/create_account/interested_gender/interested_gender.dart';
+import '../../views/create_account/select_gender/selected_Gender.dart';
+import '../../views/create_account/set_password/set_password.dart';
 import '../../views/onbording_screen/onboarding2.dart';
 import '../../views/onbording_screen/onbording.dart';
 import '../../views/welcome_screen/welcome_page.dart';
@@ -45,6 +47,8 @@ class AppRoutes {
 
   // ================ CreateAccount ========================
   static const String createAccount = "/CreateAccount";
+  static const String setPassword = "/SetPassword";
+  static const String interestedGender = "/InterestedGender";
 
   // ================ select gender ========================
   static const String  selectGender  = "/SelectGender";
@@ -90,7 +94,10 @@ class AppRoutes {
 
     GetPage(name: selectGender, page: () => SelectGender(),),
     //===========  CreateAccount ==================
-    GetPage(name: createAccount, page: () => CreateAccount(),)
+    GetPage(name: createAccount, page: () => CreateAccount(),),
+    GetPage(name: setPassword, page: () => SetPassword(),),
+    GetPage(name: interestedGender, page: () => InterestedGender(),)
+
 
 
 
