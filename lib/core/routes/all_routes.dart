@@ -8,6 +8,7 @@ import '../../views/auth/login-screen/confirm_screen/confirm_screen.dart';
 import '../../views/auth/login-screen/login_screen.dart';
 import '../../views/auth/login-screen/otp_screen/otp_screen.dart';
 import '../../views/create_account/create_account.dart';
+import '../../views/create_account/create_bot/create_bot.dart';
 import '../../views/create_account/interested_gender/interested_gender.dart';
 import '../../views/create_account/select_gender/selected_Gender.dart';
 import '../../views/create_account/set_password/set_password.dart';
@@ -49,21 +50,12 @@ class AppRoutes {
   static const String createAccount = "/CreateAccount";
   static const String setPassword = "/SetPassword";
   static const String interestedGender = "/InterestedGender";
+  static const String createBot = "/CreateBot";
 
   // ================ select gender ========================
-  static const String  selectGender  = "/SelectGender";
-
-
-
-
-
-
-
+  static const String selectGender = "/SelectGender";
 
   // bridge
-
-
-
 
   static List<GetPage> routes = [
     ///=========================== onboarding Part 1  =======================//
@@ -74,6 +66,7 @@ class AppRoutes {
     GetPage(name: welcomeScreen, page: () => WelcomeScreen()),
     GetPage(name: welcomeScreen2, page: () => WelcomeScreen2()),
     GetPage(name: welcome, page: () => WelcomePage()),
+
     /// ===================================================================
     //=========================== Login ==============================
     GetPage(name: login, page: () => LoginScreen()),
@@ -89,18 +82,12 @@ class AppRoutes {
     GetPage(name: setNewPassword, page: () => SetNewPassword()),
     GetPage(name: successScreen, page: () => SuccessScreen()),
 
-
     //===========  select gender ==================
-
-    GetPage(name: selectGender, page: () => SelectGender(),),
+    GetPage(name: selectGender, page: () => SelectGender()),
     //===========  CreateAccount ==================
-    GetPage(name: createAccount, page: () => CreateAccount(),),
-    GetPage(name: setPassword, page: () => SetPassword(),),
-    GetPage(name: interestedGender, page: () => InterestedGender(),)
-
-
-
-
-
+    GetPage(name: createAccount, page: () => CreateAccount()),
+    GetPage(name: setPassword, page: () => SetPassword()),
+    GetPage(name: interestedGender, page: () => InterestedGender()),
+    GetPage(name: createBot, page: () => CreateBot()),
   ];
 }

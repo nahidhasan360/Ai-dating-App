@@ -3,6 +3,9 @@ import 'package:dating_apps/global_widgets/custom_button.dart';
 import 'package:dating_apps/utils/assets_manager.dart';
 import 'package:dating_apps/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import '../../../core/routes/all_routes.dart';
 import 'custom_widgets_intrst/custom_widgets_intrst.dart';
 
 class InterestedGender extends StatelessWidget {
@@ -12,7 +15,7 @@ class InterestedGender extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: CustomAppBar(iconPath: SvgManager.back,),
+      appBar: CustomAppBar(iconPath: SvgManager.back),
 
       body: Container(
         width: double.infinity,
@@ -56,14 +59,18 @@ class InterestedGender extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [const SizedBox(height: 20), InterestedGenderSelection()],
+                  children: [
+                    const SizedBox(height: 20),
+                    InterestedGenderSelection(),
+                  ],
                 ),
                 const SizedBox(height: 40),
 
                 // use below custom button
                 CustomButton(
                   onTap: () {
-                    // Get.toNamed(AppRoutes.interestedGender);
+                    Get.toNamed(AppRoutes.createBot);
+                    print('addd');
                   },
                   title: 'Continue',
                   fontSize: 16,
